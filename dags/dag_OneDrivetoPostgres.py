@@ -1,7 +1,6 @@
 from airflow import DAG
 from datetime import datetime,timedelta
 from airflow.operators.python_operator import PythonOperator
-from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.models.xcom import XCom
 import requests
 import json
