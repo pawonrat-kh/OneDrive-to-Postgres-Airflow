@@ -17,7 +17,7 @@ from sqlalchemy.types import Integer, DateTime, VARCHAR, FLOAT, DECIMAL
 def connect_onedrive(ti=None):
     URL = 'https://graph.microsoft.com/v1.0/'
     # Fill access token
-    token = 'EwB4A8l6BAAUAOyDv0l6PcCVu89kmzvqZmkWABkAAT6ttScqEOJBcyLY2O0eICgBROQD/YlZAdxHen4MQQBWwIRVpbKl3aoCedB+/oW41zFGHSz6yXcToHHPGgQMpy/I3OcDEYh2H/6aR3C3dhwzgEzTTRMwxPNOqT+tlVkhV/Bk7Gztj+gdea+mxZE4lP8KvBb4hcm4nRUbZ64W28iaFHfvavA5rHM12afx/V4t4Ht/lZ8BbzLDXPssiespsihNMVRPsYmyRZoL75BgMeTBXgRXBa8d/PY0hc6yl134ERUP82y92WvcCEjV/9py4FfPj4dw7Bg8uLFh/3JjYgZxHS71Ftzojsbz1DUsLSZiSGSTdEOP5k95gbYVqOiEGM8DZgAACPC7QTdf/CXdSALg1NsLAZiVImkj3lrNGFCayZ6EyNVupJ0X6ffEi4/nQVcEqB1gk9I3NxQu1tfss8f+XBTsZo8vuTiDGU9HPxDTZb2jCg4paZS3yrjg4uZNUMZPV0mkL4g0vuI4QXqRNLcAD/x/FuFBLwcRI8WB3PgMHnEoY1m5yh+IHH006/VD9rdFca8kTjlkm4Dal+RlMBLzt5RB1lLtcVaKN04F/QfjCcTLi+W7hT8eEksONVIxQfhWNwxsKOWkYSSS9DuYb2zsnBDmzTR86sk7b4VhsFEgtTU9cfyXgIm+gdGdUSTJn/GFyJGRaXBWcaBjVq1Ym27JNdxBFIJfM+bATLt/pOux5pxM8amvpsHKQ9AKPw41rB8sFV79Esn9ZDDZ7jZQvt2xhvZspwNt1C0QPhsyD0iGOr+nuHf+Xj3xCUUCgeBVP6rup04UHDC+hPQ+tTDC9N7votr+8/wslb4GapqANTsrABHmlK3JtxOG3tG/pq9Jyelpu8eJUCS8IzojXNCt6G83XPZlq5C/a20L4ot1P1cgwwAXBMSuleLy4ZkvxZ0sWcN9J0vgibxR0xrrkkTDvw070XZQ9nI4LVDuGBrkUFO8U68OZOmEMbZCfDgIdiLmAx9p/uHbSvHaud/+/jsNhktDHKKk+z0CnNc1RgqpoYibtLUXXl8vBJWp9vxgI+cBGEn5Tcu/gzf4b3Ls0ZsBPIAK5ltLDwm+f0JH2o95KBswESQ7O1z8nYGK8Oaa7WZzvxzGPU9/bbkVIkNRqN3f93tfpzyz7KXbzIwC'
+    token = 'access_token'
     HEADERS = {'Authorization': 'Bearer ' + token}
     ti.xcom_push(key='URL', value=URL) #push variable in XCOM
     ti.xcom_push(key='HEADERS', value=HEADERS) #push variable in XCOM
